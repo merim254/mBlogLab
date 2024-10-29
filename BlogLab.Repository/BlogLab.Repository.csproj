@@ -69,8 +69,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlogCommentRepository.cs" />
+    <Compile Include="BlogRepository.cs" />
     <Compile Include="AccountRepository.cs" />
+    <Compile Include="IBlogCommentRepository.cs" />
+    <Compile Include="IBlogRepository.cs" />
     <Compile Include="IAccountRepository.cs" />
+    <Compile Include="IPhotoRepository.cs" />
+    <Compile Include="PhotoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

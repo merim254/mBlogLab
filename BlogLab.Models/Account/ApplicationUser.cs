@@ -22,5 +22,5 @@ namespace BlogLab.Models.Account
         = string.Empty;
 
     }
-    }
 }
+
