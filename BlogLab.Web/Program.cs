@@ -1,4 +1,10 @@
+
+
+using BlogLab.Models.Settings;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<CloudinaryOptions>(builder.Configuration.GetSection(nameof(CloudinaryOptions)));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

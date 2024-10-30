@@ -99,7 +99,7 @@ namespace BlogLab.Repository
 
             }
 
-            return Blog;
+            return blog;
         }
         public async Task<Blog> UpsertAsync(BlogCreate blogCreate, int applicationUserId)
         {
