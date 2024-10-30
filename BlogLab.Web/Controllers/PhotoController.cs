@@ -1,6 +1,6 @@
-﻿using BlogLab.Models.Photo;
-using BlogLab.Repository;
-using BlogLab.Services;
+﻿using BlogLab1.Models.Photo;
+using BlogLab1.Repository;
+using BlogLab1.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

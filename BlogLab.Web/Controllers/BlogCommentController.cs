@@ -1,5 +1,5 @@
-﻿using BlogLab.Models.BlogComment;
-using BlogLab.Repository;
+﻿using BlogLab1.Models.BlogComment;
+using BlogLab1.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

@@ -1,5 +1,8 @@
-﻿using BlogLab.Models.Account;
-using Microsoft.AspNet.Identity;
+﻿
+
+
+using BlogLab1.Models.Account;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlogLab.Repository
+namespace BlogLab1.Repository
 {
     public interface IAccountRepository
     {

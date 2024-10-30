@@ -1,4 +1,4 @@
-﻿using BlogLab.Models.Exception;
+﻿using BlogLab1.Models.Exception;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 

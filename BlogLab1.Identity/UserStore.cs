@@ -1,16 +1,13 @@
-﻿using BlogLab.Models.Account;
-using BlogLab.Repository;
+﻿using BlogLab1.Models.Account;
+using BlogLab1.Repository;
 using Microsoft.AspNetCore.Identity;
-
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace BlogLab1.Identity
 {
     public class UserStore :
-        IUserStore<ApplicationUserIdentity>,
-        IUserEmailStore<ApplicationUserIdentity>,
-        IUserPasswordStore<ApplicationUserIdentity>
+         IUserStore<ApplicationUserIdentity>,
+         IUserEmailStore<ApplicationUserIdentity>,
+         IUserPasswordStore<ApplicationUserIdentity>
     {
         private readonly IAccountRepository _accountRepository;
 

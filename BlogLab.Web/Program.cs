@@ -1,10 +1,10 @@
 
 
-using BlogLab.Identity;
-using BlogLab.Models.Account;
-using BlogLab.Models.Settings;
-using BlogLab.Repository;
-using BlogLab.Services;
+using BlogLab1.Identity;
+using BlogLab1.Models.Account;
+using BlogLab1.Models.Settings;
+using BlogLab1.Repository;
+using BlogLab1.Services;
 using BlogLab.Web.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -14,6 +14,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<CloudinaryOptions>(builder.Configuration.GetSection(nameof(CloudinaryOptions)));
+
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IPhotoService, PhotoService>();
 
@@ -21,6 +22,7 @@ builder.Services.AddScoped<IBlogRepository, BlogRepository>();
 builder.Services.AddScoped<IBlogCommentRepository, BlogCommentRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IPhotoRepository, PhotoRepository>();
+
 
 
 builder.Services.AddIdentityCore<ApplicationUserIdentity>(options =>
