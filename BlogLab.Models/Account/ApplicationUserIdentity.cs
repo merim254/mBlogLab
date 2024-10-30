@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace BlogLab.Models.Account
 {
-    public class ApplicationUserIdentity
+    public class ApplicationUserIdentity : IUser<string>
     {
+        public string Id { get; set; }
+        public string UserName { get; set; }
         public int ApplicationUserId { get; set; } 
         public string Username { get; set; }    
         public string NormalizedUsername { get; set; }

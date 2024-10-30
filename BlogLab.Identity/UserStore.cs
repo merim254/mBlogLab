@@ -1,6 +1,6 @@
 ﻿using BlogLab.Models.Account;
 using BlogLab.Repository;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +28,17 @@ namespace BlogLab.Identity
             return await _accountRepository.CreateAsync(user, cancellationToken);
         }
 
+        public Task CreateAsync(ApplicationUserIdentity user)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<IdentityResult> DeleteAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteAsync(ApplicationUserIdentity user)
         {
             throw new NotImplementedException();
         }
@@ -43,7 +53,17 @@ namespace BlogLab.Identity
             throw new NotImplementedException();
         }
 
+        public Task<ApplicationUserIdentity> FindByEmailAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<ApplicationUserIdentity> FindByIdAsync(string userId, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApplicationUserIdentity> FindByIdAsync(string userId)
         {
             throw new NotImplementedException();
         }
@@ -54,15 +74,30 @@ namespace BlogLab.Identity
 
         }
 
+        public Task<ApplicationUserIdentity> FindByNameAsync(string userName)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<string> GetEmailAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
         {
             return Task.FromResult(user.Email);
 
         }
 
+        public Task<string> GetEmailAsync(ApplicationUserIdentity user)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<bool> GetEmailConfirmedAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
         {
             return Task.FromResult(true);
+        }
+
+        public Task<bool> GetEmailConfirmedAsync(ApplicationUserIdentity user)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<string> GetNormalizedEmailAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
@@ -80,6 +115,11 @@ namespace BlogLab.Identity
             return Task.FromResult(user.PasswordHash);
         }
 
+        public Task<string> GetPasswordHashAsync(ApplicationUserIdentity user)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<string> GetUserIdAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
         {
             return Task.FromResult(user.ApplicationUserId.ToString());
@@ -95,15 +135,30 @@ namespace BlogLab.Identity
             return Task.FromResult(user.PasswordHash != null);
         }
 
+        public Task<bool> HasPasswordAsync(ApplicationUserIdentity user)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task SetEmailAsync(ApplicationUserIdentity user, string email, CancellationToken cancellationToken)
         {
             user.Email= email;
             return Task.FromResult(0);
         }
 
+        public Task SetEmailAsync(ApplicationUserIdentity user, string email)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task SetEmailConfirmedAsync(ApplicationUserIdentity user, bool confirmed, CancellationToken cancellationToken)
         {
             return Task.FromResult(0);
+        }
+
+        public Task SetEmailConfirmedAsync(ApplicationUserIdentity user, bool confirmed)
+        {
+            throw new NotImplementedException();
         }
 
         public Task SetNormalizedEmailAsync(ApplicationUserIdentity user, string normalizedEmail, CancellationToken cancellationToken)
@@ -124,6 +179,11 @@ namespace BlogLab.Identity
             return Task.FromResult(0);
         }
 
+        public Task SetPasswordHashAsync(ApplicationUserIdentity user, string passwordHash)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task SetUserNameAsync(ApplicationUserIdentity user, string userName, CancellationToken cancellationToken)
         {
             user.Username = userName;
@@ -131,6 +191,11 @@ namespace BlogLab.Identity
         }
 
         public Task<IdentityResult> UpdateAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdateAsync(ApplicationUserIdentity user)
         {
             throw new NotImplementedException();
         }
